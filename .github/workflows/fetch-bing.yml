@@ -1,0 +1,109 @@
+name: Fetch Daily Bing Image
+
+on:
+  schedule:
+    # 每天 UTC 00:00 运行 (北京时间 08:00)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 允许手动触发测试
+
+permissions:
+  contents: write # 允许写入仓库内容
+
+jobs:
+  fetch-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Fetch and Process Data
+        env:
+          DATA_FILE: data/images.json
+        run: |
+          mkdir -p data
+          
+          # 初始化文件如果不存在
+          if [ ! -f "$DATA_FILE" ]; then
+            echo '[]' > "$DATA_FILE"
+          fi
+
+          node << 'EOF'
+          const fs = require('fs');
+          const https = require('https');
+
+          const API_URL = 'https://uapis.cn/api/v1/image/bing-daily?format=json';
+          const DATA_FILE = process.env.DATA_FILE || 'data/images.json';
+
+          function fetchData() {
+            return new Promise((resolve, reject) => {
+              https.get(API_URL, (res) => {
+                let data = '';
+                res.on('data', (chunk) => data += chunk);
+                res.on('end', () => {
+                  try {
+                    resolve(JSON.parse(data));
+                  } catch (e) {
+                    reject(e);
+                  }
+                });
+              }).on('error', reject);
+            });
+          }
+
+          async function main() {
+            try {
+              console.log('Fetching data from API...');
+              const newData = await fetchData();
+              
+              if (!newData || !newData.image_url) {
+                console.error('Invalid data received');
+                process.exit(1);
+              }
+
+              let existingData = [];
+              try {
+                const content = fs.readFileSync(DATA_FILE, 'utf8');
+                existingData = JSON.parse(content);
+              } catch (e) {
+                existingData = [];
+              }
+
+              // 去重检查
+              const exists = existingData.some(item => item.date === newData.date);
+              
+              if (exists) {
+                console.log(`Image for ${newData.date} already exists. Skipping.`);
+              } else {
+                console.log(`New image found for ${newData.date}. Adding to library.`);
+                existingData.unshift(newData);
+                fs.writeFileSync(DATA_FILE, JSON.stringify(existingData, null, 2), 'utf8');
+                console.log('Data updated successfully.');
+                // 创建标记文件，指示有变更需要提交
+                fs.writeFileSync('.changes_detected', 'true');
+              }
+
+            } catch (error) {
+              console.error('Error:', error);
+              process.exit(1);
+            }
+          }
+
+          main();
+          EOF
+
+      - name: Commit and Push if changed
+        if: hashFiles('.changes_detected') != ''
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Bot"
+          git add data/images.json
+          git commit -m "chore: update bing daily image $(date +%Y-%m-%d)"
+          git push
+        env:
+          # 使用默认的 GITHUB_TOKEN，无需 PAT
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
