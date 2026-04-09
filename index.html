@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing Daily Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #f5f7fa;
+            --card-bg: #ffffff;
+            --text-primary: #2c3e50;
+            --text-secondary: #7f8c8d;
+            --accent-color: #3498db;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #1a1a1a;
+            --card-bg: #2d2d2d;
+            --text-primary: #ecf0f1;
+            --text-secondary: #bdc3c7;
+            --accent-color: #5dade2;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            transition: var(--transition);
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background-color: var(--card-bg);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        h1 { font-size: 1.5rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+        h1 i { color: var(--accent-color); }
+
+        .theme-toggle {
+            background: none; border: none; cursor: pointer; font-size: 1.2rem;
+            color: var(--text-primary); padding: 0.5rem; border-radius: 50%;
+            transition: var(--transition);
+        }
+        .theme-toggle:hover { background-color: rgba(0,0,0,0.05); color: var(--accent-color); }
+
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--card-bg); border-radius: 12px; overflow: hidden;
+            box-shadow: var(--shadow); transition: var(--transition);
+            display: flex; flex-direction: column; height: 100%;
+        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+
+        .img-wrapper {
+            position: relative; padding-top: 56.25%; overflow: hidden; cursor: pointer;
+        }
+        .img-wrapper img {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            object-fit: cover; transition: transform 0.5s ease;
+        }
+        .card:hover .img-wrapper img { transform: scale(1.05); }
+
+        .card-content { padding: 1.2rem; flex-grow: 1; display: flex; flex-direction: column; }
+        
+        .card-date {
+            font-size: 0.85rem; color: var(--accent-color); font-weight: 600;
+            margin-bottom: 0.5rem; display: flex; align-items: center; gap: 5px;
+        }
+        
+        .card-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; line-height: 1.3; }
+        
+        .card-desc {
+            font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;
+            display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+            overflow: hidden; flex-grow: 1;
+        }
+
+        .card-footer {
+            margin-top: auto; display: flex; justify-content: space-between;
+            align-items: center; font-size: 0.8rem; color: var(--text-secondary);
+            border-top: 1px solid rgba(0,0,0,0.05); padding-top: 0.8rem;
+        }
+        
+        .copyright {
+            max-width: 70%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+
+        .download-btn {
+            color: var(--text-primary); text-decoration: none; padding: 5px 10px;
+            border-radius: 4px; transition: background 0.2s;
+        }
+        .download-btn:hover { background-color: rgba(0,0,0,0.05); color: var(--accent-color); }
+
+        #loading { text-align: center; padding: 2rem; font-size: 1.2rem; color: var(--text-secondary); }
+
+        /* Lightbox */
+        .lightbox {
+            display: none; position: fixed; z-index: 1000; left: 0; top: 0;
+            width: 100%; height: 100%; background-color: rgba(0,0,0,0.9);
+            justify-content: center; align-items: center; opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .lightbox.active { display: flex; opacity: 1; }
+        .lightbox-img { max-width: 90%; max-height: 90%; border-radius: 4px; }
+        .close-lightbox {
+            position: absolute; top: 20px; right: 30px; color: white;
+            font-size: 2rem; cursor: pointer;
+        }
+
+        @media (max-width: 600px) { .gallery { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fa-solid fa-image"></i> Bing Daily Gallery</h1>
+        <button class="theme-toggle" id="themeToggle" title="切换主题">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </header>
+
+    <div class="container">
+        <div id="loading">正在加载图库...</div>
+        <div class="gallery" id="gallery"></div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Full size">
+    </div>
+
+    <script>
+        const DATA_URL = './data/images.json';
+        const gallery = document.getElementById('gallery');
+        const loading = document.getElementById('loading');
+        const themeToggle = document.getElementById('themeToggle');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeLightbox = document.querySelector('.close-lightbox');
+
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+                document.body.setAttribute('data-theme', 'dark');
+                themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            } else {
+                document.body.setAttribute('data-theme', 'light');
+                themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            }
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.innerHTML = newTheme === 'dark' 
+                ? '<i class="fa-solid fa-sun"></i>' 
+                : '<i class="fa-solid fa-moon"></i>';
+        });
+
+        async function fetchImages() {
+            try {
+                const response = await fetch(DATA_URL);
+                if (!response.ok) throw new Error('Network response was not ok');
+                const images = await response.json();
+                renderGallery(images);
+            } catch (error) {
+                console.error('Error fetching images:', error);
+                loading.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> 加载失败';
+            }
+        }
+
+        function renderGallery(images) {
+            loading.style.display = 'none';
+            if (images.length === 0) {
+                gallery.innerHTML = '<p style="text-align:center; width:100%;">暂无图片数据</p>';
+                return;
+            }
+            images.forEach(img => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                const description = img.description || '暂无描述';
+                const copyright = img.copyright || 'Unknown';
+                const imageUrl = img.image_url_1080 || img.image_url;
+                const fullImageUrl = img.image_url_4k || img.image_url;
+
+                card.innerHTML = `
+                    <div class="img-wrapper" onclick="openLightbox('${fullImageUrl}')">
+                        <img src="${imageUrl}" alt="${img.title}" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-date"><i class="fa-regular fa-calendar"></i> ${img.date}</div>
+                        <h3 class="card-title">${img.title}</h3>
+                        <p class="card-desc">${description}</p>
+                        <div class="card-footer">
+                            <span class="copyright" title="${copyright}"><i class="fa-regular fa-copyright"></i> ${copyright}</span>
+                            <a href="${fullImageUrl}" target="_blank" class="download-btn" title="查看原图"><i class="fa-solid fa-expand"></i></a>
+                        </div>
+                    </div>
+                `;
+                gallery.appendChild(card);
+            });
+        }
+
+        window.openLightbox = function(url) {
+            lightboxImg.src = url;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        };
+
+        closeLightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        initTheme();
+        fetchImages();
+    </script>
+</body>
+</html>
