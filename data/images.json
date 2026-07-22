@@ -1,5 +1,230 @@
 [
   {
+    "date": "2026-07-22",
+    "market": "en-US",
+    "title": "Santa Catalina Arch, Antigua, Guatemala (© Filippo Maria Bianchi/Getty Images)",
+    "copyright": "Santa Catalina Arch, Antigua, Guatemala (© Filippo Maria Bianchi/Getty Images)",
+    "quiz_id": "HPQuiz_20260722_SantaCatalina",
+    "trivia_list": [
+      {
+        "date": "2026-07-22",
+        "market": "zh-CN",
+        "title": "珊瑚礁与海滩在拉贾安帕特，印度尼西亚",
+        "headline": "细微之举，影响深远",
+        "quiz_id": "HPQuiz_20260722_CoralAwareness",
+        "trivia": {
+          "question": "哪种鱼通过磨碎珊瑚为沙滩形成作出贡献？",
+          "options": [
+            {
+              "bullet": "A",
+              "text": "鳞鲀",
+              "url": "https://cn.bing.com/search?q=%E9%B9%A6%E9%B9%89%E9%B1%BC&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260722_CoralAwareness%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%220%22+UserChoices%3A%220%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ"
+            },
+            {
+              "bullet": "B",
+              "text": "鹦鹉鱼",
+              "url": "https://cn.bing.com/search?q=%E9%B9%A6%E9%B9%89%E9%B1%BC&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260722_CoralAwareness%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%221%22+UserChoices%3A%221%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%221%22&FORM=HPQUIZ"
+            },
+            {
+              "bullet": "C",
+              "text": "小丑鱼",
+              "url": "https://cn.bing.com/search?q=%E9%B9%A6%E9%B9%89%E9%B1%BC&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260722_CoralAwareness%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%222%22+UserChoices%3A%222%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ"
+            }
+          ]
+        },
+        "image_url": "https://cn.bing.com/th?id=OHR.CoralAwareness_ZH-CN1621627126_UHD.jpg",
+        "image_url_4k": "https://cn.bing.com/th?id=OHR.CoralAwareness_ZH-CN1621627126_UHD.jpg",
+        "image_url_1080": "https://cn.bing.com/th?id=OHR.CoralAwareness_ZH-CN1621627126_UHD.jpg&pid=hp&w=1920"
+      },
+      {
+        "date": "2026-07-21",
+        "market": "zh-CN",
+        "title": "圣卡��琳娜拱门，安提瓜，危地马拉",
+        "headline": "拱影寻踪",
+        "quiz_id": "HPQuiz_20260721_SantaCatalina",
+        "trivia": {
+          "question": "圣卡塔利娜拱门位于哪座城市？",
+          "options": [
+            {
+              "bullet": "A",
+              "text": "格拉纳达",
+              "url": "https://cn.bing.com/search?q=%E5%AE%89%E6%8F%90%E7%93%9C&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260721_SantaCatalina%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%220%22+UserChoices%3A%220%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ"
+            },
+            {
+              "bullet": "B",
+              "text": "莱昂",
+              "url": "https://cn.bing.com/search?q=%E5%AE%89%E6%8F%90%E7%93%9C&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260721_SantaCatalina%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%221%22+UserChoices%3A%221%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ"
+            },
+            {
+              "bullet": "C",
+              "text": "安提瓜",
+              "url": "https://cn.bing.com/search?q=%E5%AE%89%E6%8F%90%E7%93%9C&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260721_SantaCatalina%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%222%22+UserChoices%3A%222%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%221%22&FORM=HPQUIZ"
+            }
+          ]
+        },
+        "image_url": "https://cn.bing.com/th?id=OHR.SantaCatalina_ZH-CN6223370790_UHD.jpg",
+        "image_url_4k": "https://cn.bing.com/th?id=OHR.SantaCatalina_ZH-CN6223370790_UHD.jpg",
+        "image_url_1080": "https://cn.bing.com/th?id=OHR.SantaCatalina_ZH-CN6223370790_UHD.jpg&pid=hp&w=1920"
+      },
+      {
+        "date": "2026-07-20",
+        "market": "zh-CN",
+        "title": "月球与地球由阿耳忒弥斯2号机组人员拍摄",
+        "headline": "月瞰寰宇",
+        "quiz_id": "HPQuiz_20260720_Artemis",
+        "trivia": {
+          "question": "月球的哪种力量影响地球的海洋潮汐？",
+          "options": [
+            {
+              "bullet": "A",
+              "text": "重力",
+              "url": "https://cn.bing.com/search?q=%E9%87%8D%E5%8A%9B&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260720_Artemis%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%220%22+UserChoices%3A%220%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%221%22&FORM=HPQUIZ"
+            },
+            {
+              "bullet": "B",
+              "text": "磁学",
+              "url": "https://cn.bing.com/search?q=%E9%87%8D%E5%8A%9B&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260720_Artemis%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%221%22+UserChoices%3A%221%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ"
+            },
+            {
+              "bullet": "C",
+              "text": "辐射",
+              "url": "https://cn.bing.com/search?q=%E9%87%8D%E5%8A%9B&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260720_Artemis%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%222%22+UserChoices%3A%222%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ"
+            }
+          ]
+        },
+        "image_url": "https://cn.bing.com/th?id=OHR.Artemis_ZH-CN3540365575_UHD.jpg",
+        "image_url_4k": "https://cn.bing.com/th?id=OHR.Artemis_ZH-CN3540365575_UHD.jpg",
+        "image_url_1080": "https://cn.bing.com/th?id=OHR.Artemis_ZH-CN3540365575_UHD.jpg&pid=hp&w=1920"
+      },
+      {
+        "date": "2026-07-19",
+        "market": "zh-CN",
+        "title": "不同亚种的家燕聚在一起休息",
+        "headline": "敛羽栖时",
+        "quiz_id": "HPQuiz_20260719_HirundoRustica",
+        "trivia": {
+          "question": "家燕具备何种特征使其适合长途飞行？",
+          "options": [
+            {
+              "bullet": "A",
+              "text": "钩状喙",
+              "url": "https://cn.bing.com/search?q=%E6%B7%B1%E5%8F%89%E5%BD%A2%E5%B0%BE&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260719_HirundoRustica%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%220%22+UserChoices%3A%220%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ"
+            },
+            {
+              "bullet": "B",
+              "text": "蹼足",
+              "url": "https://cn.bing.com/search?q=%E6%B7%B1%E5%8F%89%E5%BD%A2%E5%B0%BE&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260719_HirundoRustica%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%221%22+UserChoices%3A%221%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ"
+            },
+            {
+              "bullet": "C",
+              "text": "深叉形尾",
+              "url": "https://cn.bing.com/search?q=%E6%B7%B1%E5%8F%89%E5%BD%A2%E5%B0%BE&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260719_HirundoRustica%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%222%22+UserChoices%3A%222%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%221%22&FORM=HPQUIZ"
+            }
+          ]
+        },
+        "image_url": "https://cn.bing.com/th?id=OHR.HirundoRustica_ZH-CN2798518247_UHD.jpg",
+        "image_url_4k": "https://cn.bing.com/th?id=OHR.HirundoRustica_ZH-CN2798518247_UHD.jpg",
+        "image_url_1080": "https://cn.bing.com/th?id=OHR.HirundoRustica_ZH-CN2798518247_UHD.jpg&pid=hp&w=1920"
+      },
+      {
+        "date": "2026-07-18",
+        "market": "zh-CN",
+        "title": "恶魔桥在克罗姆劳杜鹃花公园，萨克森州，德国",
+        "headline": "环影圆成",
+        "quiz_id": "HPQuiz_20260718_DevilsBridge",
+        "trivia": {
+          "question": "建造拉科茨桥使用了哪种类型的岩石？",
+          "options": [
+            {
+              "bullet": "A",
+              "text": "花岗岩",
+              "url": "https://cn.bing.com/search?q=%E7%8E%84%E6%AD%A6%E5%B2%A9&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260718_DevilsBridge%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%220%22+UserChoices%3A%220%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ"
+            },
+            {
+              "bullet": "B",
+              "text": "玄武岩",
+              "url": "https://cn.bing.com/search?q=%E7%8E%84%E6%AD%A6%E5%B2%A9&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260718_DevilsBridge%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%221%22+UserChoices%3A%221%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%221%22&FORM=HPQUIZ"
+            },
+            {
+              "bullet": "C",
+              "text": "砂岩",
+              "url": "https://cn.bing.com/search?q=%E7%8E%84%E6%AD%A6%E5%B2%A9&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260718_DevilsBridge%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%222%22+UserChoices%3A%222%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ"
+            }
+          ]
+        },
+        "image_url": "https://cn.bing.com/th?id=OHR.DevilsBridge_ZH-CN2164982440_UHD.jpg",
+        "image_url_4k": "https://cn.bing.com/th?id=OHR.DevilsBridge_ZH-CN2164982440_UHD.jpg",
+        "image_url_1080": "https://cn.bing.com/th?id=OHR.DevilsBridge_ZH-CN2164982440_UHD.jpg&pid=hp&w=1920"
+      },
+      {
+        "date": "2026-07-17",
+        "market": "zh-CN",
+        "title": "瓦伊海滩上的日光浴躺椅，克里特岛，希腊",
+        "headline": "希腊式的逃离",
+        "quiz_id": "HPQuiz_20260717_VaiUmbrellas",
+        "trivia": {
+          "question": "克里特岛宁静的瓦伊海滩濒临哪片海域？",
+          "options": [
+            {
+              "bullet": "A",
+              "text": "爱琴海",
+              "url": "https://cn.bing.com/search?q=%E7%88%B1%E7%90%B4%E6%B5%B7&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260717_VaiUmbrellas%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%220%22+UserChoices%3A%220%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%221%22&FORM=HPQUIZ"
+            },
+            {
+              "bullet": "B",
+              "text": "爱奥尼亚海",
+              "url": "https://cn.bing.com/search?q=%E7%88%B1%E7%90%B4%E6%B5%B7&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260717_VaiUmbrellas%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%221%22+UserChoices%3A%221%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ"
+            },
+            {
+              "bullet": "C",
+              "text": "利比亚海",
+              "url": "https://cn.bing.com/search?q=%E7%88%B1%E7%90%B4%E6%B5%B7&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260717_VaiUmbrellas%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%222%22+UserChoices%3A%222%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ"
+            }
+          ]
+        },
+        "image_url": "https://cn.bing.com/th?id=OHR.VaiUmbrellas_ZH-CN1271422272_UHD.jpg",
+        "image_url_4k": "https://cn.bing.com/th?id=OHR.VaiUmbrellas_ZH-CN1271422272_UHD.jpg",
+        "image_url_1080": "https://cn.bing.com/th?id=OHR.VaiUmbrellas_ZH-CN1271422272_UHD.jpg&pid=hp&w=1920"
+      },
+      {
+        "date": "2026-07-16",
+        "market": "zh-CN",
+        "title": "海军码头，芝加哥，伊利诺伊州，美国",
+        "headline": "滨水变色龙",
+        "quiz_id": "HPQuiz_20260716_NavyPier",
+        "trivia": {
+          "question": "芝加哥海军码头延伸到哪座湖泊？",
+          "options": [
+            {
+              "bullet": "A",
+              "text": "伊利湖",
+              "url": "https://cn.bing.com/search?q=%E5%AF%86%E6%AD%87%E6%A0%B9%E6%B9%96&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260716_NavyPier%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%220%22+UserChoices%3A%220%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ"
+            },
+            {
+              "bullet": "B",
+              "text": "密歇根湖",
+              "url": "https://cn.bing.com/search?q=%E5%AF%86%E6%AD%87%E6%A0%B9%E6%B9%96&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260716_NavyPier%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%221%22+UserChoices%3A%221%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%221%22&FORM=HPQUIZ"
+            },
+            {
+              "bullet": "C",
+              "text": "苏必利尔湖",
+              "url": "https://cn.bing.com/search?q=%E5%AF%86%E6%AD%87%E6%A0%B9%E6%B9%96&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260716_NavyPier%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%222%22+UserChoices%3A%222%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ"
+            }
+          ]
+        },
+        "image_url": "https://cn.bing.com/th?id=OHR.NavyPier_ZH-CN4649271588_UHD.jpg",
+        "image_url_4k": "https://cn.bing.com/th?id=OHR.NavyPier_ZH-CN4649271588_UHD.jpg",
+        "image_url_1080": "https://cn.bing.com/th?id=OHR.NavyPier_ZH-CN4649271588_UHD.jpg&pid=hp&w=1920"
+      }
+    ],
+    "resolution": "4k",
+    "image_url": "https://cn.bing.com/th?id=OHR.SantaCatalina_EN-US1116829215_UHD.jpg",
+    "image_url_4k": "https://cn.bing.com/th?id=OHR.SantaCatalina_EN-US1116829215_UHD.jpg",
+    "image_url_1080": "https://cn.bing.com/th?id=OHR.SantaCatalina_EN-US1116829215_UHD.jpg&pid=hp&w=1920",
+    "fetched_at": "2026-07-22T07:10:29.519963156+08:00",
+    "updated_at": "0001-01-01T00:00:00Z"
+  },
+  {
     "date": "2026-07-20",
     "market": "zh-CN",
     "title": "月球与地球由阿耳忒弥斯2号机组人员拍摄",
